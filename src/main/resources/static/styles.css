@@ -1,116 +1,133 @@
-/* 전체 배경 & 기본 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* 전체 배경 & 폰트 */
 body {
   margin: 0;
   padding: 20px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #FFF8F0; /* 연한 베이지 */
-  color: #5A4E4D;            /* 부드러운 브라운 */
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  line-height: 1.6;
 }
 
 /* 컨테이너 */
 .container {
   max-width: 960px;
   margin: 0 auto;
+  background-color: #2b2b2b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 /* 제목 */
 h1 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
+  font-size: 2.2rem;
   margin-bottom: 24px;
-  font-size: 2rem;
-  color: #A27B5C; /* 파스텔 브라운 */
+  color: #D6C1B1;
 }
 
-/* 내비게이션 링크 */
+/* 링크 */
 a {
+  color: #9DC5BB;
   text-decoration: none;
-  color: #7DAEA3; /* 파스텔 민트 */
   margin-right: 12px;
+  transition: color 0.3s;
 }
 a:hover {
-  text-decoration: underline;
-  color: #60948C;
+  color: #b3e0d6;
 }
 
 /* 버튼 */
 button, .btn {
   display: inline-block;
-  padding: 8px 16px;
-  font-size: 0.95rem;
+  padding: 10px 20px;
+  font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background-color: #E3C9C1; /* 파스텔 핑크 */
-  color: #5A4E4D;
+  background-color: #6A8E7F;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 button:hover, .btn:hover {
-  background-color: #D3B6AE;
+  background-color: #557267;
+  transform: translateY(-2px);
 }
 
+/* 버튼 컨테이너 */
 .button-container {
   display: flex;
   justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
 }
 
+/* 대형 버튼 */
 .large-button {
   width: 250px;
   height: 500px;
-  font-size: 30px;
-  margin: 0 10px;
+  font-size: 28px;
+  background-color: #8C7C77;
+  color: #fff;
 }
-
 
 /* 표 */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 16px;
-  background-color: #FFF5E4; /* 아주 연한 살구 */
+  margin-top: 20px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
 }
 th, td {
-  padding: 12px;
-  border: 1px solid #E3C9C1;
+  padding: 14px;
+  border: 1px solid #444;
   text-align: center;
 }
 th {
-  background-color: #F6E8E1; /* 파스텔 살구 */
-  color: #7D5A50;
+  background-color: #3a3a3a;
+  color: #d0cfcf;
+  font-weight: 700;
 }
 
 /* 폼 */
 form, .form-container {
   max-width: 600px;
-  margin: 0 auto 24px auto;
+  margin: 24px auto;
   padding: 20px;
-  background-color: #FEF9F5; /* 거의 흰색에 가까운 살구 */
-  border: 1px solid #E3C9C1;
+  background-color: #2c2c2c;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
+
+/* 입력 필드 */
 input[type="text"],
 input[type="number"],
 select {
   width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  border: 1px solid #E3C9C1;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border: none;
   border-radius: 6px;
-  background-color: #FFFBF8;
   font-size: 1rem;
+  background-color: #3a3a3a;
+  color: #fff;
 }
 input:focus,
 select:focus {
   outline: none;
-  border-color: #7DAEA3; /* 포커스 시 파스텔 민트 */
+  background-color: #4a4a4a;
 }
 
-/* 액션 링크(취소) */
+/* 취소 링크 */
 .cancel {
   margin-left: 12px;
-  color: #A27B5C;
+  color: #A77E77;
 }
 .cancel:hover {
-  color: #7D5A50;
+  color: #c89a9a;
 }
