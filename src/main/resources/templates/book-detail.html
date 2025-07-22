@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>‍도서 정보</title>
+    <link rel="stylesheet" th:href="@{/styles.css}"/>
+</head>
+<body>
+<h1>도서 정보</h1>
+
+<p>
+    <a href="/">홈으로</a>
+    <a href="/books">뒤로</a>
+</p>
+
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>제목</td>
+        <td>저자</td>
+        <td>출판일</td>
+    </tr>
+    </thead>
+    <tr>
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.authorId}"></td>
+        <td th:text="${book.publishedDate}"></td>
+    </tr>
+</table>
+</body>
+</html>
